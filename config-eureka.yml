@@ -1,6 +1,7 @@
 spring:
-  proflies:
-    active: dev
+  profiles:
+    active: test
+    
 ---
 spring:
   proflies: dev
@@ -11,7 +12,6 @@ server:
   port: 7001
 
 eureka:
-
   instance:
     hostname: eureka7001.com
   client:
@@ -19,6 +19,7 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://eureka7002.com:7002/eureka/
+       
 ---
 spring:
   proflies: test
@@ -29,11 +30,11 @@ server:
   port: 7002
 
 eureka:
-
   instance:
-    hostname: eureka7001.com
+    hostname: eureka7002.com
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
+
