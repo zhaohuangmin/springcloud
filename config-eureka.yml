@@ -1,11 +1,11 @@
 spring:
   proflies:
-    active:
+    active: dev
 ---
 spring:
   proflies: dev
   application:
-    name: springcloud-eureka-dev
+    name: springcloud-config-eureka-dev
 
 server:
   port: 7001
@@ -23,7 +23,7 @@ eureka:
 spring:
   proflies: test
   application:
-    name: springcloud-eureka-test
+    name: springcloud-config-eureka-test
 
 server:
   port: 7002
